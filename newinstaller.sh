@@ -13,7 +13,7 @@ export HOME=$HOME
 export USER=$USER
 
 PACKAGES_MISSING=
-for cmd in git jq curl ; do
+for cmd in git jq curl sudo ; do
   if ! which $cmd &> /dev/null;then
       PACKAGES_MISSING="${PACKAGES_MISSING} $cmd"
   fi
